@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About Coffee Horse</title>
+
+   <link rel="stylesheet" type="text/css" href="coffeeabout2.css">
+
+  <link rel="stylesheet" type="text/css" href="stylecoffeeAbout.css">
+
+  <link rel="shortcut icon" href="images/Coffee_Cup_Icon_Art.ico" type="image/x-icon">
+
+
+</head>
+
+<body>
+      <header>
+
+        <nav>
+          <ul>
+            <li class="navi"><a href="index.html">Home</a></li>
+            <li><img class="menue" src="images/navig.jpg"></li>
+            <li class="navi"><a href="coffeeAbout.html">About us</a></li>
+            <li><img class="menue" src="images/navig.jpg"></li>
+            <li class="navi"><a href="OurCoffee.html">Our coffee</a></li>
+            <li><img class="menue" src="images/navig.jpg"></li>
+            <li class="navi"><a href="How-we-deliver.html">How we deliver</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      
+
+
+    
+
+
+<div class="topbox">
+  <img class="horse" src="images/coffeehorse.jpg"> 
+  <img class="girl" src="images/girlcoffee.jpg">
+  
+</div>
+
+
+   
+      <div class= "Bio">
+         <h3>Answer the Door!</h3>
+         <h4>It's the Coffee Horse!</h4>
+          <p>Coffee Horse makes coffee how, when are where you want it by delivering your favorite blends hot and fresh, to your door step </p>
+
+          <p> Founded in 2015 by a group of on-the-go coffee lovers, Coffee Horse makes a variety of blends availble for delivery in select states throughout the US.</p>
+
+          <button class="btn"><b>Learn More</b></button>
+        </div>
+
+    
+<div id="map"></div>
+    
+
+
+<footer>
+        <p><center>Coffee Horse | sales@coffeehorse.com | 212 777 5123</center></p>
+        <center><div class="fixed-block"><span><a href="http://www.twitter.com"><img src="twittericonC1.png" alt= Go to Twitter!><a href="http://www.linkedin.com"><img src="linkediniconC1.png" alt= Go to Linkedin!></span></div></center>
+   </footer>
+
+
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+<script>
+$(document).ready(function() {
+  console.log("ready");
+});
+
+$(".btn").hover(function(){ 
+    $(".btn").css("background-color", "grey");
+    }, function(){
+    $(".btn").css("background-color", "#5E2517");
+});
+
+
+</script>
+
+<script>
+
+function initMap() {
+  var myLatLng = {lat: 40.7141667, lng: -74.0063889};
+  var myLatLngNO = {lat: 29.9544444, lng: -90.075};
+  var myLatLngSD = {lat: 32.7152778, lng: -117.1563889};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 18,
+    center: myLatLng, myLatLngNO, myLatLngSD
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Coffee Horse Here!'
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLngNO,
+    map: map,
+    title: 'Coffee Horse Here!'
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLngSD,
+    map: map,
+    title: 'Coffee Horse Here!'
+  });
+}
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
+
+    </script>
+
+
+
+
+
+</body>
+
+
+</html>
+
+  

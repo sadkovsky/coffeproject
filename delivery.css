@@ -1,0 +1,157 @@
+body {
+   background-image: url("images/background.jpeg");
+  }
+
+header, footer {
+  text-align: center;
+  background-color: #C7BCA4;
+  width: 100%;
+}
+
+header {
+  height: 10%;
+}
+
+.navi {
+  display: inline;
+  margin: 0 0.5%;
+
+}
+
+nav {
+ margin: 0:;
+ padding: 1px;
+}
+
+ a {
+  color: black;
+  text-decoration: none;
+ }
+
+li {
+  display: inline-block;
+}
+
+.navi {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+.menue {
+  width: 30px;
+
+}
+
+.logo {
+  width: 55%;
+  height: 240px;
+  float: left;
+}
+
+
+
+
+
+.head2 {
+   margin: 10px;
+   float: left;
+
+}
+
+.col-1 {
+  float: left;
+  width: 49.5%;
+  margin-top: 0.5%;
+  height: 300px;
+  background-color: #F0F5F5;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-left: 57%;
+}
+
+
+.coffee1 {
+  width: 50%;
+  margin-left: 4%;
+  border-radius: 10px;
+  float: left;
+}
+
+.text1 {
+  margin-left: 57%;
+
+}
+
+.text-2 {
+  margin-left: 10%;
+}
+
+.col-2 {
+  float: left;
+  width: 49.5%;
+  margin-top: 0.5%;
+  margin-left: 1%;
+  height: 300px;
+  background-color: #F0F5F5; 
+  border-radius: 10px;
+}
+
+input[type=text], textarea {
+  background-color: lavender;
+  height: 10%;
+  width: 120%;
+}
+
+.message {
+  height: 10%;
+  width: 25%;
+}
+
+.form {
+  margin-left: 10%;
+  width: 25%;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	margin-top: 0.5%;
+  border-radius: 10px;
+}
+
+@media (max-width: 500px) { 
+
+.wrapper,
+.col-1,
+.col-2,
+.main,
+.img,
+.main,
+.form,
+.sanitation_workers,
+h2,
+h1,
+header,
+nav,
+header,
+footer {
+  width: 100%;
+  padding: 0;
+  padding-top: none;
+  padding-left: none;
+  margin-left: auto;
+
+  }
+}
+
+@media (max-width: 770px) {
+
+.wrapper {
+  width: 100%;
+  margin: none;
+  height: 100%;
+}
+
+}
